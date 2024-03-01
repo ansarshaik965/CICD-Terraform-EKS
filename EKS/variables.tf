@@ -14,6 +14,6 @@ variable "private_subnets" {
 }
 
 variable "instance_types" {
-    description = "Node Instances"
-    type = list(string)
+  description = "Node Instances"
+  type        = list(string)
 }
