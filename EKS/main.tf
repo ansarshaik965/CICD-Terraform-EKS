@@ -24,7 +24,7 @@ module "vpc" {
   }
   private_subnet_tags = {
     "kubernetes.io/cluster/my-eks-cluster" = "shared"
-    "kubernetes.io/role/internal-elb"       = 1
+    "kubernetes.io/role/private_elb"       = 1
 
   }
 }
@@ -51,4 +51,13 @@ module "eks" {
     Environment = "dev"
     Terraform   = "true"
   }
+}
+
+
+data "aws_eks_cluster" "cluster" {
+  name = module.eks.cluster_id
+}
+
+data "aws_eks_cluster_auth" "cluster" {
+  name = module.eks.cluster_id
 }
