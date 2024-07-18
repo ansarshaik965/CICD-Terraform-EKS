@@ -1,5 +1,3 @@
-Here's a suggested `README.md` file for your GitHub repository:
-
 ```markdown
 # CICD-Terraform-EKS
 
@@ -72,5 +70,3 @@ Ansar Shaik
 
 For any queries, please contact me at [ansarshaik965@gmail.com](mailto:ansarshaik965@gmail.com).
 ```
-
-Feel free to adjust the content as per your requirements and add any additional details or steps specific to your setup.
